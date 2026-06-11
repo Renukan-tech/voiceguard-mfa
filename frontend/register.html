@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>VoiceAuth Register</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="login-page">
+
+    <!-- LEFT SIDE -->
+
+    <div class="login-left">
+
+        <div class="logo">
+
+            <i class="fa-solid fa-shield-halved"></i>
+
+            <span>VoiceAuth</span>
+
+        </div>
+
+        <h1>
+            Join the Future <br>
+            of Secure <br>
+            Authentication
+        </h1>
+
+        <p>
+            Create your account with password and voice verification
+            for an extra layer of cybersecurity protection.
+        </p>
+
+        <div class="login-features">
+
+            <div class="feature-row">
+
+                <i class="fa-solid fa-user-plus"></i>
+
+                <div>
+
+                    <h3>Create Account</h3>
+
+                    <p>Quick and Secure Registration</p>
+
+                </div>
+
+            </div>
+
+            <div class="feature-row">
+
+                <i class="fa-solid fa-microphone"></i>
+
+                <div>
+
+                    <h3>Voice Enrollment</h3>
+
+                    <p>Register Your Unique Voice</p>
+
+                </div>
+
+            </div>
+
+            <div class="feature-row">
+
+                <i class="fa-solid fa-shield"></i>
+
+                <div>
+
+                    <h3>Maximum Protection</h3>
+
+                    <p>Multi-Factor Authentication</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- RIGHT SIDE -->
+
+    <div class="login-right">
+
+        <div class="login-card">
+
+            <div class="avatar">
+
+                <i class="fa-solid fa-user-plus"></i>
+
+            </div>
+
+            <h2>Create Account</h2>
+
+            <p>Register to continue</p>
+
+            <form id="registerForm">
+
+                <div class="input-group">
+
+                    <label>Username</label>
+
+                    <div class="input-box">
+
+                        <i class="fa-regular fa-user"></i>
+
+                        <input
+                            type="text"
+                            id="username"
+                            placeholder="Enter Username"
+                            required>
+
+                    </div>
+
+                </div>
+
+                <div class="input-group">
+
+                    <label>Password</label>
+
+                    <div class="input-box">
+
+                        <i class="fa-solid fa-lock"></i>
+
+                        <input
+                            type="password"
+                            id="password"
+                            placeholder="Create Password"
+                            required>
+
+                    </div>
+
+                </div>
+
+                <div class="input-group">
+
+                    <label>Confirm Password</label>
+
+                    <div class="input-box">
+
+                        <i class="fa-solid fa-lock"></i>
+
+                        <input
+                            type="password"
+                            id="confirmPassword"
+                            placeholder="Confirm Password"
+                            required>
+
+                    </div>
+
+                </div>
+
+                <div class="input-group">
+    <label>Voice Recording</label>
+    <div class="upload-box" style="display: flex; flex-direction: column; gap: 10px;">
+        <div style="display: flex; gap: 10px;">
+            <button type="button" id="startRecord" class="record-btn">
+                🎤 Start Recording
+            </button>
+            <button type="button" id="stopRecord" class="record-btn" disabled>
+                ⏹ Stop Recording
+            </button>
+        </div>
+        <p id="recordStatus">No recording yet</p>
+    </div>
+</div>
+
+
+                <button type="submit" id="registerBtn" class="login-btn">
+
+                    <i class="fa-solid fa-user-plus"></i>
+
+                    Register
+
+                </button>
+
+                <p id="statusMessage"></p>
+
+            </form>
+
+            <div class="register-link">
+
+                Already have an account?
+
+                <a href="login.html">
+
+                    Login
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="register.js"></script>
+
+</body>
+
+</html>

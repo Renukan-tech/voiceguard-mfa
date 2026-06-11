@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VoiceAuth Login</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<div class="login-page">
+
+    <!-- LEFT SIDE -->
+    <div class="login-left">
+
+        <div class="logo">
+            <i class="fa-solid fa-shield-halved"></i>
+            <span>VoiceAuth</span>
+        </div>
+
+        <h1>
+            Welcome Back <br>
+            Secure Login <br>
+            Awaits You
+        </h1>
+
+        <p>
+            Login using your password and voice authentication for enhanced security protection.
+        </p>
+
+        <div class="login-features">
+
+            <div class="feature-row">
+                <i class="fa-solid fa-lock"></i>
+                <div>
+                    <h3>Secure Login</h3>
+                    <p>Password protected access</p>
+                </div>
+            </div>
+
+            <div class="feature-row">
+                <i class="fa-solid fa-microphone"></i>
+                <div>
+                    <h3>Voice Verification</h3>
+                    <p>Extra biometric security layer</p>
+                </div>
+            </div>
+
+            <div class="feature-row">
+                <i class="fa-solid fa-shield"></i>
+                <div>
+                    <h3>Protected Access</h3>
+                    <p>Multi-factor authentication</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="login-right">
+
+        <div class="login-card">
+
+            <div class="avatar">
+                <i class="fa-solid fa-right-to-bracket"></i>
+            </div>
+
+            <h2>Login</h2>
+            <p>Enter your credentials to continue</p>
+
+            <form id="loginForm">
+
+                <div class="input-group">
+                    <label>Username</label>
+                    <div class="input-box">
+                        <i class="fa-regular fa-user"></i>
+                        <input type="text" id="username" placeholder="Enter Username" required>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label>Password</label>
+                    <div class="input-box">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" id="password" placeholder="Enter Password" required>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label>Voice Login</label>
+
+                    <div class="upload-box" style="display:flex; flex-direction:column; gap:10px;">
+
+                        <div style="display:flex; gap:10px;">
+                            <button type="button" id="startRecord" class="record-btn">
+                                🎤 Start Recording
+                            </button>
+
+                            <button type="button" id="stopRecord" class="record-btn" disabled>
+                                ⏹ Stop
+                            </button>
+                        </div>
+
+                        <p id="recordStatus">No recording yet</p>
+
+                    </div>
+                </div>
+
+                <button type="submit" class="login-btn">
+                    <i class="fa-solid fa-right-to-bracket"></i>
+                    Login
+                </button>
+
+                <!-- FIXED PLACE -->
+                <p id="statusMessage"></p>
+
+            </form>
+
+            <div class="register-link">
+                Don't have an account?
+                <a href="register.html">Register</a>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="login.js"></script>
+
+</body>
+</html>
